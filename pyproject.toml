@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml_classifier"
+version = "0.1"
+requires-python = ">=3.12"
+dependencies = [
+    "flask",
+    "gunicorn",
+    "numpy",
+    "pandas",	
+    "PyYAML",
+    "scikit-learn",
+    "dvc"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
